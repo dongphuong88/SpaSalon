@@ -1,0 +1,34 @@
+﻿<div class="container">
+  <div class="form-group row">
+    <label for="eventTitle" class="col-2 col-form-label">Title</label>
+    <div class="col-10">
+      <input class="form-control" type="text" placeholder="Enter Event Title" id="eventTitle" [(ngModel)]="event.title">
+    </div>
+  </div>
+  <div class="form-group row">
+    <label for="eventStartTime" class="col-2 col-form-label">Event Start Time</label>
+    <div class="col-10">
+      <input class="form-control" type="datetime-local" [(ngModel)]="startTime" id="eventStartTime">
+    </div>
+  </div>
+  <div class="form-group row">
+    <label class="mr-sm-2" for="eventDuration">Event Duration</label>
+    <select class="custom-select mb-2 mr-sm-2 mb-sm-0" id="eventDuration">
+      <option selected>Select...</option>
+      <option value="1">15 mins</option>
+      <option value="2">30 mins</option>
+      <option value="3">45 mins</option>
+      <option value="4">1 hour</option>
+      <option value="5">1 hour 15 mins</option>
+      <option value="6">1 hour 30 mins</option>
+      <option value="7">2 hours</option>
+    </select>
+  </div>
+  <div class="form-group row">
+    <label for="eventColor" class="col-2 col-form-label">Event Color</label>
+    <div class="col-10">
+      <input class="form-control" type="color" [(ngModel)]="event.color" id="eventColor">
+    </div>
+  </div>
+  <button type="submit" class="btn btn-primary" (click)="clickSubmit()">Submit</button>
+  </div>

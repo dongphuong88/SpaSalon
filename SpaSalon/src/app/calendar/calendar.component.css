@@ -1,0 +1,61 @@
+﻿
+.calendarAgenda {
+  max-width: 2048px;
+  margin: auto;
+}
+.calendarNavDate {
+  font-size: 1.5em;
+}
+
+.CalendarContainer {
+}
+
+.CalendarSteadyColumns {
+  width: 70px;
+  height: 500px;
+  float: left;
+}
+.CalendarSteadyBody {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.CalendarUnsteadyColumns {
+  width: 500px;
+  height: 500px;
+  float: left;
+}
+
+.CalendarHeader {
+  width: 100%;
+  overflow: hidden;
+  display: block;
+}
+  .CalendarHeader tr {
+  }
+
+.CalendarHeaderHead {
+  min-width: 200px;
+  max-width: 100%;
+}
+
+.CalendarBody {
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+}
+.CalendarBodyRow {
+  height: 50px;
+}
+
+.CalendarBodyHead {
+  min-width: 200px;
+  max-width: 500px;
+}
+
+.calendarEvent {
+  position: absolute;
+}
+.headerPersonEvent {
+  text-align:center;
+}
